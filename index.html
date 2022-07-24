@@ -43,7 +43,7 @@
                     look-at="[gps-camera]"
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-asset"
-                    scale="0.1 0.1 0.1"
+                    scale="0.08 0.08 0.08"
                     gps-entity-place="latitude: 47.86743; longitude: 12.3503;"
                 ></a-entity>
                 <a-entity
@@ -71,11 +71,11 @@
                     look-at="[gps-camera]"
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-esset"
-                    scale="0.5 0.5 0.5"
+                    scale="0.75 0.75 0.75"
                     gps-entity-place="latitude: 47.86741; longitude: 12.34966;"
                 ></a-entity>
 
-            <a-camera gps-camera rotation-reader></a-camera>
+            <a-camera gps-camera="minDistance: 2; alert: true; maxDistance: 30" rotation-reader ></a-camera>
         </a-scene>
     </body>
 </html>
